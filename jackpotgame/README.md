@@ -1,5 +1,9 @@
 # pythone.basics
--- jackport game while loop
+
+
+--jackport game
+
+while loop
 jackpot = random.randint(1,100) 
 guess = int(input("guess a number"))
 counter = 1
