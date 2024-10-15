@@ -1,0 +1,26 @@
+# super market billing #
+    
+while True:
+    name = input("enter customer's name:")
+    cashier = input("your name:")
+    mobile = input("enter customer's mobile number:")
+    total = 0
+
+    while True:
+        print("enter the amount and quantity")
+        amount = float(input("enter amount:"))
+        quantity = float(input("enter quantity:"))
+        total += amount * quantity
+        repeat = input("do you want to add more items? (yes/no):")
+        if repeat == "no" or repeat == "No":
+            break
+    print("-"*40)
+    print("Name: ", name)
+    print("amount to be paid: ", total)
+    print("cashier name: ", cashier)
+    print("*"*40)
+    print("thank you for shopping with us")
+
+    repeat1 = input('do you want to go to next customer? (yes/no): ')
+    if repeat1 == 'no' or repeat1 == 'No':
+        break
